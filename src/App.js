@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import './components/IconImg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+import Catagerysection from './components/Catagerysection';
+import Experiencesection from './components/Experiencesection';
+import Popularsection from './components/Popularsection';
+import Topsection from './components/Topsection';
+import Customersection from './components/Customersection';
+import Newslettersection from './components/Newslattersection';
+import Footersection from './components/Footersection';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Catagerysection />
+      <Experiencesection />
+      <Popularsection />
+      <Topsection />
+      <Customersection />
+      <Newslettersection />
+      <Footersection/>
+
     </div>
   );
 }
+
+
+
+
 
 export default App;
